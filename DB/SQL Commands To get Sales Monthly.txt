@@ -1,0 +1,34 @@
+Shoes
+Most Sold
+select Model,Sum(Quantity)as MostSold from buys JOIN shoes on shoes.ID=buys.ID WHERE MONTH(Datetime)=5 AND Year(Datetime)=2022 group by Model ORDER BY MostSold DESC; 
+
+Highest Number Of Orders
+
+select Model,COUNT(Model)as Highest_Number_Of_Orders from buys JOIN shoes on shoes.ID=buys.ID WHERE MONTH(Datetime)=5 AND Year(Datetime)=2022 group by Model ORDER BY Highest_Number_Of_Orders DESC; 
+
+Number Of Orders Relativo to Pages
+
+SELECT Platform, COUNT(*) As NO_OF_ORDERS FROM `buys` JOIN Pages ON Pages.ID= buys.PN WHERE MONTH(Datetime)=10 AND Year(Datetime)=2022 group by platform ORDER BY `NO_OF_ORDERS` DESC; 
+-----------------------------------------------------------------------------------------------------------------------
+Perfumes
+Most Sold
+select Model,Sum(buyper.Quantity)as MostSold from buyper JOIN perfumes on perfumes.PerID=buyper.PerID WHERE MONTH(Datetime)=5 AND Year(Datetime)=2022 group by Model ORDER BY MostSold DESC; 
+
+Highest Number Of Orders
+
+select Model,COUNT(Model)as Highest_Number_Of_Orders from buyper JOIN perfumes on perfumes.PerID=buyper.PerID WHERE MONTH(Datetime)=5 AND Year(Datetime)=2022 group by Model ORDER BY `Highest_Number_Of_Orders` DESC; 
+
+Number Of Orders Relativo to Pages
+
+SELECT Platform, COUNT(*) As NO_OF_ORDERS FROM `buyper` JOIN Pages ON Pages.ID= buyper.PN WHERE MONTH(Datetime)=10 AND Year(Datetime)=2022 group by platform ORDER BY `NO_OF_ORDERS` DESC; 
+-----------------------------------------------------------------------------------------------------------------------
+Apparels
+Most Sold
+select Model,Sum(Quantity)as MostSold from BuyApp JOIN Apparel on Apparel.AID=BuyApp.ID WHERE MONTH(Datetime)=9 AND Year(Datetime)=2022 group by Model ORDER BY MostSold DESC;
+
+Highest Number Of Orders
+select Model,count(Model)as Highest_Number_Of_Orders from BuyApp JOIN Apparel on Apparel.AID=BuyApp.ID WHERE MONTH(Datetime)=9 AND Year(Datetime)=2022 group by Model ORDER BY Highest_Number_Of_Orders DESC; 
+
+Number Of Orders Relativo to Pages
+
+SELECT Platform, COUNT(*) As NO_OF_ORDERS FROM `BuyApp` JOIN Pages ON Pages.ID= BuyApp.PN WHERE MONTH(Datetime)=10 AND Year(Datetime)=2022 group by platform ORDER BY `NO_OF_ORDERS` DESC; 
