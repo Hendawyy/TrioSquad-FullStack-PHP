@@ -1,0 +1,97 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+
+#nav-bar
+{
+	position:sticky;
+	top:0;
+	z-index:10;
+}
+.navbar-brand img 
+{
+	height:40px;
+	padding-left:10px;
+
+}
+.navbar-nav li 
+{
+	padding:5x;
+}
+.navbar-nav li a
+{
+	float: right;
+	text-align: left;
+}
+#nav-bar ul li a :hover
+{
+	color: #007bff!important;
+}
+.navbar
+{
+	background: black!important;
+}
+.navbar-toggler
+{
+	border:none!important
+}
+.nav-link
+{
+	color: black!important;
+	font-weight:600;
+	font-size:12px;
+}
+.az{
+	text-decoration: none;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.w3-btn,.w3-button{
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	text-align:left;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+.w3-dropdown-content{
+	color:black;
+	display:none;
+	position:absolute;
+	min-width:160px;
+	margin:0;
+	padding:0;
+	z-index:1;	text-decoration:none;
+
+}
+
+.w3-show-block,.w3-show{
+	display:block!important;
+		text-decoration:none;
+
+}
+.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{
+	position:relative;
+		text-decoration:none;
+
+}	
+.w3-display-container:hover .w3-display-hover{
+	text-decoration: none;
+	display:block;
+}
+
+.w3-button:hover{
+	color:firebrick;	text-decoration:none;
+
+}
